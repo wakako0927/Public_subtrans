@@ -3,26 +3,26 @@
 
 <body>
 
-  <h1>字幕翻訳システム</h1>
-  <p>本プログラムは、中国語の映像に含まれる字幕を検出・翻訳し、日本語に表示するPythonアプリケーションです。</p>
+  <h1>中国語字幕翻訳システム</h1>
+  <p>本プログラムは、中国語の映像に含まれる字幕を検出・翻訳し、<br>日本語訳を表示するPythonアプリケーションです。</p>
 
   <h2>主な機能</h2>
   <ul>
-    <li><strong>映像処理:</strong> OpenCVを用いて映像から字幕領域を抽出</li>
-    <li><strong>OCR:</strong> EasyOCRを使って中国語字幕を文字認識</li>
+    <li><strong>映像処理:</strong> OpenCVで映像から字幕部分を抽出</li>
+    <li><strong>OCR:</strong> EasyOCRで中国語字幕を文字認識</li>
     <li><strong>重複検出:</strong> 類似度判定により重複字幕を除去</li>
-    <li><strong>翻訳:</strong> OpenAI GPT-4o APIで自然な日本語に翻訳</li>
-    <li><strong>バッファ処理:</strong> 字幕の類似性を基にフィルタリングし連結</li>
+    <li><strong>翻訳:</strong> OpenAI GPT-4o APIで日本語に翻訳</li>
+    <li><strong>バッファ処理:</strong> 字幕の類似性をもとにフィルタリングし連結</li>
   </ul>
 
   <h2>ディレクトリ構成</h2>
   <pre><code>.
 ├── main.py                 # エントリーポイント
-├── config.py               # 設定（APIキー、動画パスなど）
-├── ocr_processor.py        # OCR処理と字幕抽出（OpenCV + EasyOCR）
-├── translator.py           # GPTを使った翻訳処理
-├── duplicate_filter.py     # 類似字幕を除外するフィルター
-├── requirements.txt        # 必要なPythonライブラリ
+├── config.py               # 設定（APIキー、パス）
+├── ocr_processor.py        # OCRと字幕抽出
+├── translator.py           # GPTベースの翻訳
+├── duplicate_filter.py     # 類似の字幕を除外
+├── buffer_test             # テストおよびプロトタイピング
 </code></pre>
 
   <h2> 動作要件</h2>
@@ -50,7 +50,7 @@ pip install -r requirements.txt
 
   <h2>翻訳のしくみ</h2>
   <p>
-    字幕はOCR処理された後、<code>SubtitleBuffer</code> によって正規化・重複排除され、<code>translate_chinese_to_ja</code> 関数で翻訳されます。ChatGPT APIはシステムプロンプトに「中国ドラマの字幕である」と明示することで、より自然な日本語を生成します。
+    字幕はOCR処理された後、<code>SubtitleBuffer</code> によって正規化・重複排除され、<code>translate_chinese_to_ja</code> で翻訳されます。<br>ChatGPT APIのシステムプロンプトに「<ドラマタイトル>の字幕である」と明示することで、より自然な日本語を生成されるようになりました。
   </p>
 
   <h2>参考技術</h2>

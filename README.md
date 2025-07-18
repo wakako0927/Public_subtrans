@@ -22,7 +22,6 @@
 ├── ocr_processor.py        # OCRと字幕抽出
 ├── translator.py           # GPTベースの翻訳
 ├── duplicate_filter.py     # 類似の字幕を除外
-├── buffer_test             # テストおよびプロトタイピング
 </code></pre>
 
   <h2> 動作要件</h2>
@@ -50,7 +49,7 @@ pip install -r requirements.txt
 
   <h2>翻訳のしくみ</h2>
   <p>
-    字幕はOCR処理された後、<code>SubtitleBuffer</code> によって正規化・重複排除され、<code>translate_chinese_to_ja</code> で翻訳されます。<br>ChatGPT APIのシステムプロンプトに「<ドラマタイトル>の字幕である」と明示することで、より自然な日本語を生成されるようになりました。
+    字幕はOCR処理された後、<code>SubtitleBuffer</code> によって正規化・重複排除され、<br><code>translate_chinese_to_ja</code> により、翻訳されます。<br>ChatGPT APIのシステムプロンプトに「<ドラマタイトル>の字幕である」と明示することで、より自然な日本語を生成されるようになりました。
   </p>
 
   <h2>参考技術</h2>

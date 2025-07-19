@@ -30,7 +30,7 @@
     <li>OpenCV</li>
     <li>EasyOCR</li>
     <li>openai (要APIキー)</li>
-    <li>GPU(CUDA環境)- OCR処理高速化のため</li>
+    <li>GPU(CUDA環境) - OCR処理高速化のため</li>
   </ul>
 
   <h2>セットアップ手順</h2>

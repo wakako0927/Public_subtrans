@@ -29,7 +29,7 @@
     <li>Python 3.10+</li>
     <li>OpenCV</li>
     <li>EasyOCR</li>
-    <li>openai (APIキー必要)</li>
+    <li>openai (要APIキー)</li>
     <li>GPU (推奨) - OCR処理高速化のため</li>
   </ul>
 

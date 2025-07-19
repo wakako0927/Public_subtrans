@@ -34,9 +34,20 @@
   </ul>
 
   <h2>セットアップ手順</h2>
-  <pre><code>git clone https://github.com/wakako0927/Public_subtrans
+  <h3>1.リポジトリをクローン</h3>
+  <pre><code>.
+    git clone https://github.com/wakako0927/Public_subtrans
+    cd Public_subtrans/subtrans
 </code></pre>
-
+  <h3>2. 必要なライブラリをインストール</h3>
+  <pre><code>.
+    pip install opencv-python
+    pip install numpy
+    pip install easyocr
+    pip install OpenAI
+</code></pre>
+<h3>3. プログラムの実行</h3>
+  <pre><code>python3 main.py</code></pre>
   <h2>使い方</h2>
   <ol>
     <li><code>config.py</code> にある<code>VIDEO_PATH</code>を対象の動画に設定</li>

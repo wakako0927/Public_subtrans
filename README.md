@@ -35,7 +35,6 @@
 
   <h2>セットアップ手順</h2>
   <pre><code>git clone https://github.com/wakako0927/Public_subtrans
-pip install -r requirements.txt
 </code></pre>
 
   <h2>使い方</h2>

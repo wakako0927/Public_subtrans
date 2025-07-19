@@ -35,12 +35,12 @@
 
   <h2>セットアップ手順</h2>
   <h3>1.リポジトリをクローン</h3>
-  <pre><code>.
+  <pre><code>
     git clone https://github.com/wakako0927/Public_subtrans
     cd Public_subtrans/subtrans
 </code></pre>
   <h3>2. 必要なライブラリをインストール</h3>
-  <pre><code>.
+  <pre><code>
     pip install opencv-python
     pip install numpy
     pip install easyocr

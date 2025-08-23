@@ -68,8 +68,8 @@ MODEL_PATH     = "models\\best.pt"</code></pre>
   <h2>パラメータとチューニング</h2>
   <ul>
     <li><strong>FRAME_INTERVAL:</strong> 30fps動画で <code>5</code> → 約0.16秒ごと。取りこぼしがあれば 3–6 に調整。</li>
-    <li><strong>白抽出閾値:</strong> <code>S=40</code> はやや厳しめ。拾いが弱ければ <code>S=60</code> まで緩める。</li>
-    <li><strong>GPU設定:</strong> EasyOCR は <code>gpu=False</code> で安定確認後、環境整備できたら <code>True</code>。</li>
+    <li><strong>白抽出閾値:</strong> <code>S=40</code> はやや厳しめなので拾いが弱ければ <code>S=60</code> まで緩めてください。</li>
+    <li><strong>GPU設定:</strong> EasyOCR は <code>gpu=False</code> で安定確認後、環境整備できたら <code>True</code>へ。</li>
   </ul>
 </section>
 
@@ -95,8 +95,8 @@ MODEL_PATH     = "models\\best.pt"</code></pre>
 
   <h3>適用範囲</h3>
   <ul>
-  <li>本モデルは PC 画面上の動画プレーヤー（YouTube を含む各種サイト）から取得した字幕領域で学習しており、PC環境では汎用的に動作することを確認しています。</li>
-  <li>一方で、スマートフォン画面（解像度・レイアウトが異なる環境）では十分に学習していないため、検出精度が低下する可能性があります。</li>
+  <li>本モデルは PC 画面上の動画プレーヤー（各種サイト含）から取得した字幕領域で学習しており、<br>PC環境では汎用的に動作することを確認しています。</li>
+  <li>一方で、スマートフォン画面では十分に学習していないため、検出精度が低下する可能性があります。</li>
   <li>スマホ対応を行うには、追加データによる再学習が必要です。</li>
   </ul>
 

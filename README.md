@@ -124,7 +124,7 @@ MODEL_PATH     = "models\\best.pt"</code></pre>
 
 <section>
   <h2>ライセンス</h2>
-  <p>？</p>
+  <p>MIT</p>
 </section>
 
 </body>
